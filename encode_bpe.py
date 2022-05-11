@@ -29,6 +29,7 @@ class BPEEncoder_ja:
         return content
 
     def encode(self, text, clean=False):
+        text = str(text)
         text = text.replace(' ', '<SP>')
         text = text.replace('　', '<SP>')
         text = text.replace('\r\n', '<BR>')
